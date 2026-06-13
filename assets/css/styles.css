@@ -394,6 +394,7 @@ input[type='checkbox'] {
 .home__img-wrapper {
   margin-inline: auto 2rem;
   position: relative;
+  max-width: 320px;
 }
 
 .home__img-wrapper::before,
@@ -421,6 +422,11 @@ input[type='checkbox'] {
   z-index: 10;
   position: relative;
   vertical-align: middle;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 1rem;
+  display: block;
 }
 
 /* Home animation */
@@ -487,7 +493,8 @@ input[type='checkbox'] {
 
 .about__img-wrapper {
   position: relative;
-  height: 400px;
+  height: 320px;
+  max-width: 420px;
 
   display: flex;
   justify-content: center;
@@ -498,6 +505,8 @@ input[type='checkbox'] {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  max-width: 420px;
   height: 100%;
   object-fit: cover;
   transition: all .3s ease;
