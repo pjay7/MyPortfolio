@@ -724,6 +724,92 @@ input[type='checkbox'] {
   background-color: var(--container-color);
 }
 
+.skills__grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.skill__category {
+  background: var(--container-color);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.skill__category:hover {
+  border-color: var(--first-color);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.skill__category-title {
+  font-size: var(--larger-font-size);
+  font-weight: var(--weight-600);
+  color: var(--title-color);
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+  border-bottom: 2px solid var(--first-color);
+  padding-bottom: 0.75rem;
+}
+
+.skill__logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1.5rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.skill__logo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.skill__logo-item:hover {
+  transform: scale(1.1) translateY(-5px);
+}
+
+.skill__logo-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  background: var(--body-color);
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.skill__logo-item:hover img {
+  border-color: var(--first-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: var(--container-color);
+}
+
+.skill__logo-name {
+  font-size: 0.75rem;
+  font-weight: var(--weight-600);
+  color: var(--text-color);
+  text-align: center;
+  line-height: 1.2;
+  max-width: 100px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.skill__logo-item:hover .skill__logo-name {
+  opacity: 1;
+  color: var(--first-color);
+}
+
 .skills__container {
   grid-template-columns: repeat(3, 1fr);
   row-gap: 4rem;
@@ -1111,6 +1197,10 @@ input[type='checkbox'] {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .skills__grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .resume__container {
     row-gap: 2.5rem;
   }
@@ -1175,6 +1265,20 @@ input[type='checkbox'] {
   .work__container,
   .form__group {
     grid-template-columns: 1fr;
+  }
+
+  .skills__grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .skill__logos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .skill__logo-item img {
+    width: 60px;
+    height: 60px;
   }
 
   .footer__container {

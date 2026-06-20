@@ -310,104 +310,115 @@
       <!--==================== SKILLS ====================-->
       <section class="skills section">
         <h2 class="section__title title-center" data-title="My Talent">
-          Skills
+          Skills & Technologies
         </h2>
 
-        <div class="skills__container container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto;">
-          <div class="skills__item" style="background: var(--container-color); padding: 1.5rem; border-radius: 1rem; border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.5rem;">
-              <h3 class="skills__name" style="margin: 0; font-size: 1.1rem; font-weight: 600;">Java Backend</h3>
-              <span style="background: var(--first-color); color: white; padding: 0.25rem 0.75rem; border-radius: 50%; font-size: 0.85rem; font-weight: 600; min-width: 30px; text-align: center;">01</span>
-            </div>
-            <p style="color: #888; font-size: 0.9rem; margin: 0; line-height: 1.5; flex: 1;">Core expertise in designing and implementing high-performance backend services with Java and modern frameworks.</p>
-            <div class="image-container" style="display: flex; align-items: center; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-top: 0.5rem;">
-              <img src="assets/img/Java.png" alt="Java Logo" width="40" height="40" style="border-radius: 0.5rem; background: white; padding: 0.25rem;" />
-            </div>
-          </div>
-
-          <div class="skills__item" style="background: var(--container-color); padding: 1.5rem; border-radius: 1rem; border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.5rem;">
-              <h3 class="skills__name" style="margin: 0; font-size: 1.1rem; font-weight: 600;">Spring Boot & APIs</h3>
-              <span style="background: var(--first-color); color: white; padding: 0.25rem 0.75rem; border-radius: 50%; font-size: 0.85rem; font-weight: 600; min-width: 30px; text-align: center;">02</span>
-            </div>
-            <p style="color: #888; font-size: 0.9rem; margin: 0; line-height: 1.5; flex: 1;">Building robust REST APIs, reactive services, and microservices with Spring Boot ecosystem.</p>
-            <div class="image-container" style="display: flex; align-items: center; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-top: 0.5rem;">
-              <img src="assets/img/SpringBoot.png" alt="Spring Boot Logo" width="40" height="40" style="border-radius: 0.5rem; background: white; padding: 0.25rem;" />
-              <img src="assets/img/RESTApi.png" alt="REST API Logo" width="40" height="40" style="border-radius: 0.5rem; background: white; padding: 0.25rem;" />
+        <div class="skills__grid-container container">
+          <!-- Java Backend -->
+          <div class="skill__category">
+            <h3 class="skill__category-title">Java Backend</h3>
+            <div class="skill__logos">
+              <div class="skill__logo-item">
+                <img src="assets/img/Java.png" alt="Java" />
+                <span class="skill__logo-name">Java</span>
+              </div>
+              <div class="skill__logo-item">
+                <img src="assets/img/SpringBoot.png" alt="Spring Boot" />
+                <span class="skill__logo-name">Spring Boot</span>
+              </div>
             </div>
           </div>
 
-          <div class="skills__item" style="background: var(--container-color); padding: 1.5rem; border-radius: 1rem; border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.5rem;">
-              <h3 class="skills__name" style="margin: 0; font-size: 1.1rem; font-weight: 600;">Data Processing & ETL</h3>
-              <span style="background: var(--first-color); color: white; padding: 0.25rem 0.75rem; border-radius: 50%; font-size: 0.85rem; font-weight: 600; min-width: 30px; text-align: center;">03</span>
-            </div>
-            <p style="color: #888; font-size: 0.9rem; margin: 0; line-height: 1.5; flex: 1;">Architecting and implementing Apache Beam pipelines for large-scale data processing on cloud platforms.</p>
-            <div class="image-container" style="display: flex; align-items: center; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-top: 0.5rem;">
-              <img src="assets/img/ApacheBeam.png" alt="Apache Beam Logo" width="40" height="40" style="border-radius: 0.5rem; background: white; padding: 0.25rem;" />
-              <img src="assets/img/GCP.png" alt="GCP Logo" width="40" height="40" style="border-radius: 0.5rem; background: white; padding: 0.25rem;" />
-            </div>
-          </div>
-
-          <div class="skills__item" style="background: var(--container-color); padding: 1.5rem; border-radius: 1rem; border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.5rem;">
-              <h3 class="skills__name" style="margin: 0; font-size: 1.1rem; font-weight: 600;">Cloud & DevOps</h3>
-              <span style="background: var(--first-color); color: white; padding: 0.25rem 0.75rem; border-radius: 50%; font-size: 0.85rem; font-weight: 600; min-width: 30px; text-align: center;">04</span>
-            </div>
-            <p style="color: #888; font-size: 0.9rem; margin: 0; line-height: 1.5; flex: 1;">Deploying and managing applications on GCP/AWS with CI/CD pipelines and container orchestration.</p>
-            <div class="image-container" style="display: flex; align-items: center; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-top: 0.5rem;">
-              <img src="assets/img/GCP.png" alt="GCP Logo" width="40" height="40" style="border-radius: 0.5rem; background: white; padding: 0.25rem;" />
-              <img src="assets/img/AWS.png" alt="AWS Logo" width="40" height="40" style="border-radius: 0.5rem; background: white; padding: 0.25rem;" />
-              <img src="assets/img/Jenkins.png" alt="Jenkins Logo" width="40" height="40" style="border-radius: 0.5rem; background: white; padding: 0.25rem;" />
-              <img src="assets/img/GHA.png" alt="GitHub Actions Logo" width="40" height="40" style="border-radius: 0.5rem; background: white; padding: 0.25rem;" />
+          <!-- API & REST -->
+          <div class="skill__category">
+            <h3 class="skill__category-title">Architecture & API Design</h3>
+            <div class="skill__logos">
+              <div class="skill__logo-item">
+                <img src="assets/img/RESTApi.png" alt="REST API" />
+                <span class="skill__logo-name">REST API</span>
+              </div>
+              <div class="skill__logo-item">
+                <img src="assets/img/Microservisces.png" alt="Microservices" />
+                <span class="skill__logo-name">Microservices</span>
+              </div>
             </div>
           </div>
 
-          <div class="skills__item" style="background: var(--container-color); padding: 1.5rem; border-radius: 1rem; border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.5rem;">
-              <h3 class="skills__name" style="margin: 0; font-size: 1.1rem; font-weight: 600;">Security & Authentication</h3>
-              <span style="background: var(--first-color); color: white; padding: 0.25rem 0.75rem; border-radius: 50%; font-size: 0.85rem; font-weight: 600; min-width: 30px; text-align: center;">05</span>
-            </div>
-            <p style="color: #888; font-size: 0.9rem; margin: 0; line-height: 1.5; flex: 1;">Implementing OAuth2, JWT-based authentication, encryption, and role-based access control (RBAC).</p>
-            <div class="image-container" style="display: flex; align-items: center; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-top: 0.5rem;">
-              <img src="assets/img/SpringSecurity.png" alt="Spring Security Logo" width="40" height="40" style="border-radius: 0.5rem; background: white; padding: 0.25rem;" />
-              <img src="assets/img/JWT.png" alt="JWT Logo" width="40" height="40" style="border-radius: 0.5rem; background: white; padding: 0.25rem;" />
-            </div>
-          </div>
-
-          <div class="skills__item" style="background: var(--container-color); padding: 1.5rem; border-radius: 1rem; border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.5rem;">
-              <h3 class="skills__name" style="margin: 0; font-size: 1.1rem; font-weight: 600;">Databases & Persistence</h3>
-              <span style="background: var(--first-color); color: white; padding: 0.25rem 0.75rem; border-radius: 50%; font-size: 0.85rem; font-weight: 600; min-width: 30px; text-align: center;">06</span>
-            </div>
-            <p style="color: #888; font-size: 0.9rem; margin: 0; line-height: 1.5; flex: 1;">Designing and optimizing relational databases with SQL, indexing, and query performance tuning.</p>
-            <div class="image-container" style="display: flex; align-items: center; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-top: 0.5rem;">
-              <img src="assets/img/PS.png" alt="PostgreSQL Logo" width="40" height="40" style="border-radius: 0.5rem; background: white; padding: 0.25rem;" />
-              <img src="assets/img/MSQL.png" alt="MySQL Logo" width="40" height="40" style="border-radius: 0.5rem; background: white; padding: 0.25rem;" />
+          <!-- Data & ETL -->
+          <div class="skill__category">
+            <h3 class="skill__category-title">Data Processing</h3>
+            <div class="skill__logos">
+              <div class="skill__logo-item">
+                <img src="assets/img/ApacheBeam.png" alt="Apache Beam" />
+                <span class="skill__logo-name">Apache Beam</span>
+              </div>
+              <div class="skill__logo-item">
+                <img src="assets/img/GCP.png" alt="GCP" />
+                <span class="skill__logo-name">GCP Dataflow</span>
+              </div>
             </div>
           </div>
 
-          <div class="skills__item" style="background: var(--container-color); padding: 1.5rem; border-radius: 1rem; border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.5rem;">
-              <h3 class="skills__name" style="margin: 0; font-size: 1.1rem; font-weight: 600;">Version Control & Collaboration</h3>
-              <span style="background: var(--first-color); color: white; padding: 0.25rem 0.75rem; border-radius: 50%; font-size: 0.85rem; font-weight: 600; min-width: 30px; text-align: center;">07</span>
-            </div>
-            <p style="color: #888; font-size: 0.9rem; margin: 0; line-height: 1.5; flex: 1;">Proficient with Git, GitHub workflows, branching strategies, and collaborative development practices.</p>
-            <div class="image-container" style="display: flex; align-items: center; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-top: 0.5rem;">
-              <img src="assets/img/GIT.png" alt="Git Logo" width="40" height="40" style="border-radius: 0.5rem; background: white; padding: 0.25rem;" />
+          <!-- Cloud Platforms -->
+          <div class="skill__category">
+            <h3 class="skill__category-title">Cloud & DevOps</h3>
+            <div class="skill__logos">
+              <div class="skill__logo-item">
+                <img src="assets/img/AWS.png" alt="AWS" />
+                <span class="skill__logo-name">AWS</span>
+              </div>
+              <div class="skill__logo-item">
+                <img src="assets/img/GCP.png" alt="GCP" />
+                <span class="skill__logo-name">GCP</span>
+              </div>
+              <div class="skill__logo-item">
+                <img src="assets/img/Jenkins.png" alt="Jenkins" />
+                <span class="skill__logo-name">Jenkins</span>
+              </div>
             </div>
           </div>
 
-          <div class="skills__item" style="background: var(--container-color); padding: 1.5rem; border-radius: 1rem; border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.5rem;">
-              <h3 class="skills__name" style="margin: 0; font-size: 1.1rem; font-weight: 600;">Testing & QA Automation</h3>
-              <span style="background: var(--first-color); color: white; padding: 0.25rem 0.75rem; border-radius: 50%; font-size: 0.85rem; font-weight: 600; min-width: 30px; text-align: center;">08</span>
-            </div>
-            <p style="color: #888; font-size: 0.9rem; margin: 0; line-height: 1.5; flex: 1;">Writing unit tests, integration tests, and C# automation for cross-layer system verification.</p>
-            <div class="image-container" style="display: flex; align-items: center; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-top: 0.5rem;">
-              <img src="assets/img/VS-studio.png" alt="Visual Studio Logo" width="40" height="40" style="border-radius: 0.5rem; background: white; padding: 0.25rem;" />
+          <!-- Security -->
+          <div class="skill__category">
+            <h3 class="skill__category-title">Security</h3>
+            <div class="skill__logos">
+              <div class="skill__logo-item">
+                <img src="assets/img/SpringSecurity.jpeg" alt="Spring Security" />
+                <span class="skill__logo-name">Spring Security</span>
+              </div>
+              <div class="skill__logo-item">
+                <img src="assets/img/JWT.png" alt="JWT" />
+                <span class="skill__logo-name">JWT/OAuth2</span>
+              </div>
             </div>
           </div>
+
+          <!-- Databases -->
+          <div class="skill__category">
+            <h3 class="skill__category-title">Databases</h3>
+            <div class="skill__logos">
+              <div class="skill__logo-item">
+                <img src="assets/img/PS.png" alt="PostgreSQL" />
+                <span class="skill__logo-name">PostgreSQL</span>
+              </div>
+              <div class="skill__logo-item">
+                <img src="assets/img/MSQL.png" alt="MySQL" />
+                <span class="skill__logo-name">MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Version Control -->
+          <div class="skill__category">
+            <h3 class="skill__category-title">Version Control</h3>
+            <div class="skill__logos">
+              <div class="skill__logo-item">
+                <img src="assets/img/GIT.png" alt="Git" />
+                <span class="skill__logo-name">Git/GitHub</span>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
